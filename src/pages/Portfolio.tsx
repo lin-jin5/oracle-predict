@@ -1,4 +1,5 @@
 import { Header } from "@/components/layout/Header";
+import { BottomNav } from "@/components/layout/BottomNav";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -97,7 +98,7 @@ const transactions = [
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-20 lg:pb-0">
       <Header />
 
       <div className="container px-4 py-8">
@@ -331,6 +332,8 @@ const Portfolio = () => {
           </TabsContent>
         </Tabs>
       </div>
+
+      <BottomNav />
     </div>
   );
 };

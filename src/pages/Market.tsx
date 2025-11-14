@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
+import { BottomNav } from "@/components/layout/BottomNav";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -74,7 +75,7 @@ const Market = () => {
     : "0.00";
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-20 lg:pb-0">
       <Header />
 
       <div className="container px-4 py-8">
@@ -348,6 +349,8 @@ const Market = () => {
           </div>
         </div>
       </div>
+
+      <BottomNav />
     </div>
   );
 };

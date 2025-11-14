@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Header } from "@/components/layout/Header";
+import { BottomNav } from "@/components/layout/BottomNav";
 import { MarketCard } from "@/components/market/MarketCard";
 import { MarketFilters } from "@/components/market/MarketFilters";
 import { Card } from "@/components/ui/card";
@@ -70,7 +71,7 @@ const Index = () => {
   const [selectedSort, setSelectedSort] = useState("volume");
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-20 lg:pb-0">
       <Header />
 
       {/* Hero Section */}
@@ -160,6 +161,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <BottomNav />
     </div>
   );
 };
